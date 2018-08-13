@@ -1,0 +1,119 @@
+#nav { /* container */ }
+  #nav > a { display: none; }
+  #nav li { position: relative; }
+/* first level */
+  #nav > ul {
+    height: 3.75em;
+    padding-left: 1em;
+  }
+  #nav > ul > li {
+    margin: 0.3em;
+    float: left;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+/* second level */
+  #nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+  #nav li:hover ul { display: block; }
+
+
+
+
+
+
+
+
+  
+  #menu-search {
+    width: 4em;
+  }
+  #menu-search-field {
+    height: 2.5em;
+    border-radius: 25px;
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: hsl(0, 100%, 100%);
+    padding-left: 1em;
+    padding-right: 0;
+
+    background: #8f4c98;
+    background: -moz-linear-gradient(left, hsl(293,21%,25%) 0%, hsl(293,33%,45%) 100%);
+    background: -webkit-linear-gradient(left, hsl(293,21%,25%) 0%,hsl(293,33%,45%) 100%);
+    background: linear-gradient(to right, hsl(293,21%,25%) 0%,hsl(293,33%,45%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49324c', endColorstr='#8f4c98',GradientType=1 );
+    z-index: 1;
+  }
+  #menu-search-button {
+    color: rgb(255, 255, 255);
+    height: 2.5em;
+    width: 5em;
+    border-radius: 5px;
+    border: none;
+    background: #000;
+  }
+
+ /* Mobile */
+
+ 
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px)  
+  {
+    .rekotaxi-logo {
+      width: 5em;
+      
+    }
+    #nav { 
+      position: relative;
+
+
+    }
+    #nav > a { }
+    #nav:not( :target ) > a:first-of-type,
+    #nav:target > a:last-of-type { display: block; }
+  /* first level */
+    #nav > ul {
+      margin: 0;
+      height: auto;
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    background-color: rgb(255, 255, 255);
+    }
+    #nav:target > ul { display: block; }
+    #nav > ul > li {
+      width: 100%;
+      float: none;
+    }
+
+    /* Button */
+    .menu-header {
+      text-transform: uppercase;
+      text-align:center;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: rgb(255, 255, 255);
+      height: 2em;
+      width: 10em;
+      border-radius: 5px;
+      border: none;
+      z-index: 100;
+      position: fixed;
+      top: 90%;
+      left: 50%;
+      margin-left: -5em;
+      margin-top: -1em;
+
+
+      background: hsl(293,21%,25%)
+    }
+    }
+

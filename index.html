@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+    <meta charset="utf-8" />
+	<meta name="disabled-adaptations" content="watch">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Reko Taxi - Hem</title>
+  
+  <!--  Styles  -->
+    <link rel="stylesheet" href="styles/text.css">
+	<link rel="stylesheet" href="styles/people.css">
+	<link rel="stylesheet" href="styles/grid.css">
+	<link rel="stylesheet" href="styles/menu.css">
+	<link rel="stylesheet" href="styles/main.css">
+	
+	<link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="grid-wrapper">
+  	<div class="grid-logo">
+        <a href="index.html">
+
+        <picture >
+            <source class="rekotaxi-logo" media="(min-width: 800px)" srcset="img/rekotaxi.svg">
+            <source class="rekotaxi-logo" media="(min-width: 800px)" srcset="img/rekotaxi.png">
+            <source class="rekotaxi-logo" media="(max-width: 480px)" srcset="img/rekotaxi-mini.svg">
+            <source class="rekotaxi-logo" media="(max-width: 480px)" srcset="img/rekotaxi-mini.png">
+                
+            <img class="rekotaxi-logo" src="img/rekotaxi.png" alt="Reko Taxi logotyp">
+        </picture>
+
+        </a>
+    </div>
+  	<div class="grid-menu">
+        <nav id="nav">
+            <a href="#nav" title="Show navigation">
+              <div class="menu-header">Menu</div>
+            </a>
+            <a href="#" title="Hide navigation"><i class="fas fa-times"></i></a>
+
+
+
+
+            
+            <ul>
+              
+              <li><a href="index.html">Home</a></li>
+              <li><a href="omoss.html">Om oss</a></li>
+              <li><a href="safetrip.html">Safe Trip</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="#"><i class="em em-cookie"></i></a></li>
+              <li>
+                <span id="menu-search">
+                  <input name="search" type="text" id="menu-search-field">
+                  <button type="button" id="menu-search-button"><i class="fas fa-search"></i></button>
+                </span>
+              </li>
+            </ul>
+          </nav>
+      </div>
+  	<div class="grid-cities">
+      <h2>Vi finns i dessa städer:</h2>
+<div class="city-container">
+	<div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/stockholm.svg">
+                <img src="img/stockholm.png" alt="Icon på Stockholm">
+        </picture>
+		<p><a href="stader.html">Stockholm</a></p>
+    </div>
+
+	<div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/goteborg.svg">
+            <img src="img/goteborg.png" alt="Icon på Göteborg">
+        </picture>
+        <p><a href="stader.html">Göteborg</a></p>
+    </div>
+
+    <div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/malmo.svg">
+            <img src="img/malmo.png" alt="Icon på Malmö">
+        </picture>
+		<p><a href="stader.html">Malmö</a></p>
+	</div>
+    
+    <div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/uppsala.svg">
+            <img src="img/uppsala.png" alt="Icon på Uppsala">
+        </picture>
+		<p><a href="stader.html">Uppsala</a></p>
+    </div>
+    
+	<div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/vasteras.svg">
+            <img src="img/vasteras.png" alt="Icon på Västerås">
+        </picture>
+		<p><a href="#">Västerås</a></p>
+	</div>
+
+    <div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/orebro.svg">
+            <img src="img/orebro.png" alt="Icon på Örebro">
+        </picture>
+		<p><a href="#">Örebro</a></p>
+    </div>
+    
+	<div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/linkoping.svg">
+            <img src="img/linkoping.png" alt="Icon på Linköping">
+        </picture>
+		<p><a href="#">Linköping</a></p>
+    </div>
+    
+	<div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/helsingborg.svg">
+            <img src="img/helsingborg.png" alt="Icon på Helsingborg">
+        </picture>
+		<p><a href="#">Helsingborg</a></p>
+	</div>
+
+    <div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/norrkoping.svg">
+            <img src="img/norrkoping.png" alt="Icon på Norrköping">
+        </picture>
+		<p><a href="#">Norrköping</a></p>
+    </div>
+
+    <div class="city-container-container">
+        <picture>
+            <source type="image/svg+xml" srcset="img/jonkoping.svg">
+            <img src="img/jonkoping.png" alt="Icon på Jönköping">
+        </picture>
+        
+        
+            
+        <p><a href="#">Jönköping</a></p>
+    </div>
+</div>
+      </div>
+  	<div class="grid-order">
+    
+    <div class="order-form-label">
+      <label for="firstname">Förnamn*:</label>
+    </div>
+    <div class="order-form">
+      <input id="firstname" type="text" aria-label="Förnamn" class="order-form">
+    </div>
+    <div class="order-form-label">
+      <label for="lastname">Efternamn*:</label>
+    </div>
+    <div class="order-form">
+      <input id="lastname" type="text" aria-label="Efternamn">
+    </div>
+    <div class="order-form-label">
+      <label for="email">Email*:</label>
+    </div>
+    <div class="order-form">
+      <input id="email" type="email" aria-label="Emailaddress">
+    </div>
+    <div class="order-form-label">
+      <label for="phonenumber">Telefon*:</label>
+    </div>
+    <div class="order-form">
+      <input id="phonenumber" type="tel" aria-label="Telefonnummer" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="10">
+    </div>
+    <div class="order-form-label">
+      <label for="start">Startadress*:</label>
+    </div>
+    <div class="order-form">
+      <input id="start" type="text" aria-label="Startadress">
+    </div>
+    <div class="order-form-label">
+      <label for="end">Slutadress*:</label>
+    </div>
+    <div class="order-form">
+      <input id="end" type="text" aria-label="Slutadress">
+    </div>
+    <div class="order-form-label">
+      <label for="comfort">Komfortnivå:</label>
+    </div>
+    <div class="order-form-14">
+      <select id="comfort" size="4" aria-label="Komfort Nivå">
+            <option value="s">s</option>
+            <option value="m">m</option>
+            <option value="l">l</option>
+            <option value="xl">xl</option>
+          </select><br>
+          <label for="comfort" class="order-form-14-info">(Om du inte väljer en nivå så kommer det en bil motsvarande s-nivå.)</label>
+    </div>
+    <div class="order-form-label">
+      <label for="pet">Husdjur:</label>
+    </div>
+    <div class="order-form-16">
+      <input type="radio" id="pet" value="yes">Ja
+  	  <input type="radio" id="pet" value="no">Nej
+    </div>
+    <div class="order-form-label">
+            <label for="date">Datum*:</label>
+          </div>
+          <div class="order-form">
+            <input name="date" type="date" aria-label="Datum">
+          </div>
+    <div class="order-form-button">
+      <button id="order-form-button" type="button" onclick="alert('Taxi Beställd!')">Beställ Taxi</button>
+    </div>
+    <p>Eller Ring på <a href="tel:0800000000">08-000 000 00</a></p>
+
+  </div>
+  
+	<div class="grid-why">
+            <main>
+        <ol class="grid-why-list">
+          <li>Miljövänliga bilar</li>
+          <li>Välutbildad personal</li>
+          <li>Bästa valet vad gäller säkerhet!</li>
+          <li>10% av varje taxiresa <a href="#">Safe trip</a>.</li>
+          <li>Bra priser!</li>
+          <li>Alltid i tid!</li>
+          <li>Fräscha och välstädade bilar!</li>
+          <li>Husdjur är välkomna!</li>
+          <li>Bilkuddar & -stolar för barn</li>
+          <li>Det finns kuddar och filtar för den frusne och flexibel ventilation</li>
+          <li>Kylt kolsyrat och stilla vatten finns i varje bil</li>
+        </ol>
+    </main>
+      </div>
+  	<div class="grid-people">
+        <h2 class="people-container-h2">Vilka är vi?</h2>
+		<div class="people-container">
+        
+  			<div class="people-container-container">
+                <img class="people-img" src="img/alice-andersson.jpg" alt="Alice Andersson">
+				<h2 class="people-h2-text">Alice Andersson</h2>
+				<p class="people-p-text">Titel Text</p>
+  			</div>
+	
+  			<div class="people-container-container">
+                <img class="people-img" src="img/william-johansson.jpg" alt="">
+				<h2 class="people-h2-text">William Johansson</h2>
+				<p class="people-p-text">Titel Text</p>
+  			</div>
+	
+				<div class="people-container-container">
+                <img class="people-img" src="img/alicia-karlsson.jpg" alt="Alicia Karlsson">
+				<h2 class="people-h2-text">Alicia Karlsson</h2>
+				<p class="people-p-text">Titel Text</p>
+  			</div>
+		
+			<div class="people-container-container">
+                <img class="people-img" src="img/erik-lucatero.jpg" alt="Erik Lucatero">
+                <h2 class="people-h2-text">Erik Lucatero</h2>
+				<p class="people-p-text">Titel Text</p>
+              </div>
+            
+            <div class="people-container-container">
+                    <img class="people-img" src="img/hannah-grace.jpg" alt="Hannah Grace">
+                    <h2 class="people-h2-text">Hannah Grace</h2>
+                    <p class="people-p-text">Titel Text</p>
+            </div>
+
+            <div class="people-container-container">
+                    <img class="people-img" src="img/jared-sluyter.jpg" alt="Jared Sluyter">
+                    <h2 class="people-h2-text">Jared Sluyter</h2>
+                    <p class="people-p-text">Titel Text</p>
+            </div>
+
+            <div class="people-container-container">
+                    <img class="people-img" src="img/oskar-eriksson.jpg" alt="Oskar Eriksson">
+                    <h2 class="people-h2-text">Oskar Eriksson</h2>
+                    <p class="people-p-text">Titel Text</p>
+            </div>
+            <div class="people-container-more">
+                
+                <p class="people-p-text">Samt flera andra.</p>
+        </div>
+		</div>
+	</div>
+  	<div class="grid-footer-one">
+                <footer>
+                <h3>Adress</h3>
+                <span class="footer-adress">
+                    Reko Taxi<br>
+                    <a href="https://goo.gl/maps/iNFX432J9SL2">Starrbäcksgatan 13<br>
+                    172 74 Sundbyberg</a>
+                </span>
+                <p>Tel: <a href="tel:0800000000">08-000 000 00</a></p>
+                
+                <h3>Länkar</h3>
+                <ul>
+                    <li>Press</li>
+                    <li>Site Map</li>
+                </ul>
+        
+                <h3>Social Media</h3>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-line"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+            </footer>
+            </div>
+        </div>
+        
+</body>
+        </html>
