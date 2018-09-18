@@ -12,28 +12,28 @@
     <title>Reko Taxi - Hem</title>
   
   <!--  Styles  -->
-    <link rel="stylesheet" href="styles/text.css">
-	<link rel="stylesheet" href="styles/people.css">
-	<link rel="stylesheet" href="styles/grid.css">
-	<link rel="stylesheet" href="styles/menu.css">
+
 	<link rel="stylesheet" href="styles/main.css">
 	
 	<link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css" >
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/html5-simple-date-input-polyfill.css" />
+
+    <script src="script/html5-simple-date-input-polyfill.min.js" async></script>
 </head>
 <body>
 	<div class="grid-wrapper">
   	<div class="grid-logo">
         <a href="index.html">
 
-        <picture >
-            <source class="rekotaxi-logo" media="(min-width: 800px)" srcset="img/rekotaxi.svg">
-            <source class="rekotaxi-logo" media="(min-width: 800px)" srcset="img/rekotaxi.png">
-            <source class="rekotaxi-logo" media="(max-width: 480px)" srcset="img/rekotaxi-mini.svg">
-            <source class="rekotaxi-logo" media="(max-width: 480px)" srcset="img/rekotaxi-mini.png">
-                
-            <img class="rekotaxi-logo" src="img/rekotaxi.png" alt="Reko Taxi logotyp">
-        </picture>
+            <picture >
+                <source class="rekotaxi-logo" media="(min-width: 1025px)" srcset="img/rekotaxi.svg">
+                <source class="rekotaxi-logo" media="(min-width: 1025px)" srcset="img/rekotaxi.png">
+                <source class="rekotaxi-logo" media="(max-width: 1024px)" srcset="img/rekotaxi-mini.svg">
+                <source class="rekotaxi-logo" media="(max-width: 1024px)" srcset="img/rekotaxi-mini.png">
+                    
+                <img class="rekotaxi-logo" src="img/rekotaxi.png" alt="Reko Taxi logotyp">
+            </picture>
 
         </a>
     </div>
@@ -53,6 +53,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="omoss.html">Om oss</a></li>
               <li><a href="safetrip.html">Safe Trip</a></li>
+              <li><a href="stader.html">Städer</a></li>
               <li><a href="login.html">Login</a></li>
               <li><a href="#"><i class="em em-cookie"></i></a></li>
               <li>
@@ -63,16 +64,16 @@
               </li>
             </ul>
           </nav>
-      </div>
-  	<div class="grid-cities">
+    </div>
+  	<section class="grid-cities">
       <h2>Vi finns i dessa städer:</h2>
-<div class="city-container">
-	<div class="city-container-container">
+      <div class="city-container">
+	    <div class="city-container-container">
         <picture>
             <source type="image/svg+xml" srcset="img/stockholm.svg">
                 <img src="img/stockholm.png" alt="Icon på Stockholm">
         </picture>
-		<p><a href="stader.html">Stockholm</a></p>
+		  <p><a href="stader.html">Stockholm</a></p>
     </div>
 
 	<div class="city-container-container">
@@ -150,101 +151,53 @@
         <p><a href="#">Jönköping</a></p>
     </div>
 </div>
-      </div>
-  	<div class="grid-order">
+    </section>
+    <section class="grid-order">
+    <h2 class="order-form-h2">Beställ taxi</h2>
+        
+        <label class="order-form-label" for="firstname">Förnamn*:</label>
+        <input class="order-form" id="firstname" type="text" aria-label="Förnamn">
+        <label class="order-form-label" for="lastname">Efternamn*:</label>
+        <input class="order-form" id="lastname" type="text" aria-label="Efternamn">
+        <label class="order-form-label" for="email">Email*:</label>
+        <input class="order-form" id="email" type="email" aria-label="Emailaddress">
+        <label class="order-form-label" for="phonenumber">Telefon*:</label>
+        <input class="order-form" id="phonenumber" type="tel" aria-label="Telefonnummer" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="10">
+        <label class="order-form-label" for="start">Startadress*:</label>
+        <input class="order-form" id="start" type="text" aria-label="Startadress">
+        <label class="order-form-label" for="end">Slutadress*:</label>
+        <input class="order-form" id="end" type="text" aria-label="Slutadress">
+        <label class="order-form-label" for="comfort">Komfortnivå:</label>
     
-    <div class="order-form-label">
-      <label for="firstname">Förnamn*:</label>
-    </div>
-    <div class="order-form">
-      <input id="firstname" type="text" aria-label="Förnamn" class="order-form">
-    </div>
-    <div class="order-form-label">
-      <label for="lastname">Efternamn*:</label>
-    </div>
-    <div class="order-form">
-      <input id="lastname" type="text" aria-label="Efternamn">
-    </div>
-    <div class="order-form-label">
-      <label for="email">Email*:</label>
-    </div>
-    <div class="order-form">
-      <input id="email" type="email" aria-label="Emailaddress">
-    </div>
-    <div class="order-form-label">
-      <label for="phonenumber">Telefon*:</label>
-    </div>
-    <div class="order-form">
-      <input id="phonenumber" type="tel" aria-label="Telefonnummer" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="10">
-    </div>
-    <div class="order-form-label">
-      <label for="start">Startadress*:</label>
-    </div>
-    <div class="order-form">
-      <input id="start" type="text" aria-label="Startadress">
-    </div>
-    <div class="order-form-label">
-      <label for="end">Slutadress*:</label>
-    </div>
-    <div class="order-form">
-      <input id="end" type="text" aria-label="Slutadress">
-    </div>
-    <div class="order-form-label">
-      <label for="comfort">Komfortnivå:</label>
-    </div>
-    <div class="order-form-14">
-      <select id="comfort" size="4" aria-label="Komfort Nivå">
-            <option value="s">s</option>
-            <option value="m">m</option>
-            <option value="l">l</option>
-            <option value="xl">xl</option>
-          </select><br>
-          <label for="comfort" class="order-form-14-info">(Om du inte väljer en nivå så kommer det en bil motsvarande s-nivå.)</label>
-    </div>
-    <div class="order-form-label">
-        <label for="pasengers">Passagerare*:</label>
-      </div>
-      <div class="order-form-14">
-        <select id="pasengers" size="4" aria-label="Antal Passagerare">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select><br>
-      </div>
-    <div class="order-form-label">
-      <label for="pet">Husdjur:</label>
-    </div>
-    <div class="order-form-16">
-      <input type="radio" id="pet" value="yes">Ja
-  	  <input type="radio" id="pet" value="no">Nej
-    </div>
-    <div class="order-form-label">
-            <label for="date">Datum*:</label>
-          </div>
-          <div class="order-form">
-            <input name="date" type="date" aria-label="Datum">
-          </div>
-    <div class="order-form-button">
-      <button id="order-form-button" type="button" onclick="alert('Taxi Beställd!')">Beställ Taxi</button>
-    </div>
-    <p>Eller Ring på <a href="tel:0800000000">08-000 000 00</a></p>
-
-  </div>
+        <div >
+          <select class="order-form-14" id="comfort" size="4" aria-label="Komfort Nivå">
+                <option value="s">s</option>
+                <option value="m">m</option>
+                <option value="l">l</option>
+                <option value="xl">xl</option>
+              </select><br>
+              <label for="comfort" class="order-form-14-info">(Om du inte väljer en nivå så kommer det en bil motsvarande s-nivå.)</label>
+        </div>
+        <div class="order-form-label">Husdjur:</div>
+        <div class="order-form-16">
+          <input type="radio" name="pet" id="petyes" value="yes"><label class="order-form-label">Ja</label>
+          <input type="radio" name="pet" id="petno" value="no"><label class="order-form-label">Nej</label>
+        </div>
+        
+        <label class="order-form-label" for="date">Datum*:</label>
+        <input class="order-form" id="date" name="date" type="date" aria-label="Datum">
+        
+        <button class="order-form-button" id="order-form-button" type="button" onclick="alert('Taxi Beställd!')">Beställ Taxi</button>
+        <p class="order-form-call">Eller Ring på <a href="tel:0800000000">08-000 000 00</a></p>
+    </section>
   
-	<div class="grid-why">
-            <main>
-        <ol class="grid-why-list">
+	<main class="grid-why">
+        <h2>Varför Reko Taxi?</h2>
+        <ul class="grid-why-list">
           <li>Miljövänliga bilar</li>
           <li>Välutbildad personal</li>
           <li>Bästa valet vad gäller säkerhet!</li>
-          <li>10% av varje taxiresa <a href="#">Safe trip</a>.</li>
+          <li>10% av varje taxiresa <a href="safetrip.html">Safe trip</a>.</li>
           <li>Bra priser!</li>
           <li>Alltid i tid!</li>
           <li>Fräscha och välstädade bilar!</li>
@@ -252,10 +205,11 @@
           <li>Bilkuddar & -stolar för barn</li>
           <li>Det finns kuddar och filtar för den frusne och flexibel ventilation</li>
           <li>Kylt kolsyrat och stilla vatten finns i varje bil</li>
-        </ol>
+        </ul>
     </main>
-      </div>
-  	<div class="grid-people">
+
+  	<section class="grid-people">
+      
         <h2 class="people-container-h2">Vilka är vi?</h2>
 		<div class="people-container">
         
@@ -300,20 +254,32 @@
                     <h2 class="people-h2-text">Oskar Eriksson</h2>
                     <p class="people-p-text">Titel Text</p>
             </div>
-            <div class="people-container-more">
-                
+            <div class="people-container-container">
                 <p class="people-p-text">Samt flera andra.</p>
         </div>
-		</div>
-	</div>
-  	<div class="grid-footer-one">
-                <footer>
+                
+
+        </div>
+    </section>
+    <aside class="grid-sidebar">
+        <h3>Hur beställer du en taxi?</h3>
+        <ol class="bestallning">
+            <li>Fyll i formuläret eller ring.</li>
+            <li>Vänta på taxin!</li>
+            <li>Klart!</li>
+        </ol>
+
+    </aside>
+  	<footer class="grid-footer-one">
+                
                 <h3>Adress</h3>
+                <address>
                 <span class="footer-adress">
                     Reko Taxi<br>
                     <a href="https://goo.gl/maps/iNFX432J9SL2">Starrbäcksgatan 13<br>
                     172 74 Sundbyberg</a>
                 </span>
+                </address>
                 <p>Tel: <a href="tel:0800000000">08-000 000 00</a></p>
                 
                 <h3>Länkar</h3>
@@ -329,9 +295,7 @@
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-line"></i>
                 <i class="fab fa-snapchat-ghost"></i>
-            </footer>
-            </div>
-        </div>
-        
+    </footer>
+    </div>
 </body>
-        </html>
+</html>

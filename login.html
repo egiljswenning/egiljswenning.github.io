@@ -12,10 +12,6 @@
     <title>Reko Taxi - Login</title>
   
   <!--  Styles  -->
-    <link rel="stylesheet" href="styles/text.css">
-	<link rel="stylesheet" href="styles/people.css">
-	<link rel="stylesheet" href="styles/grid.css">
-	<link rel="stylesheet" href="styles/menu.css">
 	<link rel="stylesheet" href="styles/main.css">
 	
 	<link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css" >
@@ -27,10 +23,10 @@
         <a href="index.html">
 
         <picture >
-            <source class="rekotaxi-logo" media="(min-width: 800px)" srcset="img/rekotaxi.svg">
-            <source class="rekotaxi-logo" media="(min-width: 800px)" srcset="img/rekotaxi.png">
-            <source class="rekotaxi-logo" media="(max-width: 480px)" srcset="img/rekotaxi-mini.svg">
-            <source class="rekotaxi-logo" media="(max-width: 480px)" srcset="img/rekotaxi-mini.png">
+            <source class="rekotaxi-logo" media="(min-width: 1025px)" srcset="img/rekotaxi.svg">
+            <source class="rekotaxi-logo" media="(min-width: 1025px)" srcset="img/rekotaxi.png">
+            <source class="rekotaxi-logo" media="(max-width: 1024px)" srcset="img/rekotaxi-mini.svg">
+            <source class="rekotaxi-logo" media="(max-width: 1024px)" srcset="img/rekotaxi-mini.png">
                 
             <img class="rekotaxi-logo" src="img/rekotaxi.png" alt="Reko Taxi logotyp">
         </picture>
@@ -53,6 +49,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="omoss.html">Om oss</a></li>
               <li><a href="safetrip.html">Safe Trip</a></li>
+              <li><a href="stader.html">Städer</a></li>
               <li><a href="login.html">Login</a></li>
               <li><a href="#"><i class="em em-cookie"></i></a></li>
               <li>
@@ -65,8 +62,8 @@
           </nav>
       </div>
 
-  	<div class="grid-login">
-    <main>
+  	<main class="grid-login">
+
     <div class="login-form-label">
       <label for="firstname">Användarnamn eller email</label>
     </div>
@@ -79,35 +76,39 @@
     <div class="login-form">
       <input id="lastname" type="password" aria-label="Lösenord">
     </div>
-    </main>
-</div>
+    <div class="order-form-button">
+      <button id="order-form-button" type="button" onclick="alert('Inloggad!')">Logga in</button>
+    </div>
+
+</main>
 
 
-<div class="grid-footer-one">
-    <footer>
-    <h3>Adress</h3>
-    <span class="footer-adress">
-        Reko Taxi<br>
-        <a href="https://goo.gl/maps/iNFX432J9SL2">Starrbäcksgatan 13<br>
-        172 74 Sundbyberg</a>
-    </span>
-    <p>Tel: <a href="tel:0800000000">08-000 000 00</a></p>
-    
-    <h3>Länkar</h3>
-    <ul>
-        <li>Press</li>
-        <li>Site Map</li>
-    </ul>
+<footer class="grid-footer-one">
+                
+  <h3>Adress</h3>
+  <address>
+  <span class="footer-adress">
+      Reko Taxi<br>
+      <a href="https://goo.gl/maps/iNFX432J9SL2">Starrbäcksgatan 13<br>
+      172 74 Sundbyberg</a>
+  </span>
+  </address>
+  <p>Tel: <a href="tel:0800000000">08-000 000 00</a></p>
+  
+  <h3>Länkar</h3>
+  <ul>
+      <li>Press</li>
+      <li>Site Map</li>
+  </ul>
 
-    <h3>Social Media</h3>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-facebook-messenger"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-line"></i>
-    <i class="fab fa-snapchat-ghost"></i>
+  <h3>Social Media</h3>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-facebook-f"></i>
+  <i class="fab fa-facebook-messenger"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-line"></i>
+  <i class="fab fa-snapchat-ghost"></i>
 </footer>
-</div>
 </div>
 
 </body>
